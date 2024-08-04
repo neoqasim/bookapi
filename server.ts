@@ -1,8 +1,9 @@
 
 import app from "./src/app";
+import { config } from "./src/config/config";
 
 const startServer = () => {
-    const port = process.env.PORT || 3001
+    const port = config.port
 
 
 
@@ -12,4 +13,4 @@ const startServer = () => {
     })
 }
 
-startServer()
+startServer() 
